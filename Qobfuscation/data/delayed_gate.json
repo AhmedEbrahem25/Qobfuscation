@@ -1,0 +1,91 @@
+{
+    "id": [
+        ["x", "x"],
+        ["y", "y"],
+        ["z", "z"],
+        ["h", "h"],
+        ["s", "s", "s", "s"],
+        ["t", "t", "t", "t", "t", "t", "t", "t"]
+    ],
+    "x": [
+        ["x", "x", "x"],
+        ["h", "z", "h"],
+        ["s", "y", "sdg"],
+        ["ry(pi/2)", "z", "ry(-pi/2)"],
+        ["h", "s", "s", "h"]
+    ],
+    "y": [
+        ["y", "y", "y"],
+        ["s", "x", "sdg"],
+        ["rz(pi/2)", "x", "rz(-pi/2)"],
+        ["rx(-pi/2)", "z", "rx(pi/2)"]
+    ],
+    "z": [
+        ["z", "z", "z"],
+        ["h", "x", "h"],
+        ["s", "s"],
+        ["t", "t", "t", "t"],
+        ["ry(-pi/2)", "x", "ry(pi/2)"]
+    ],
+    "h": [
+        ["h", "h", "h"],
+        ["rz(pi/2)", "rx(pi/2)", "rz(pi/2)"],
+        ["ry(pi/2)", "rz(pi)"]
+    ],
+    "s": [
+        ["t", "t"],
+        ["p(pi/2)"],
+        ["rz(pi/2)"]
+    ],
+    "sdg": [
+        ["tdg", "tdg"],
+        ["p(-pi/2)"],
+        ["rz(-pi/2)"],
+        ["s", "s", "s"]
+    ],
+    "t": [
+        ["p(pi/4)"],
+        ["rz(pi/4)"]
+    ],
+    "tdg": [
+        ["p(-pi/4)"],
+        ["rz(-pi/4)"]
+    ],
+    "sx": [
+        ["h", "s", "h"]
+    ],
+    "cx": [
+        ["h(target)", "cz(control,target)", "h(target)"]
+    ],
+    "cz": [
+        ["h(target)", "cx(control,target)", "h(target)"]
+    ],
+    "swap": [
+        ["cx(q0,q1)", "cx(q1,q0)", "cx(q0,q1)"]
+    ],
+    "crx(theta)": [
+        ["h(target)", "crz(theta, c,t)", "h(target)"]
+    ],
+    "cry(theta)": [
+        ["ry(theta/2, target)", "cx(c,t)", "ry(-theta/2, target)"]
+    ],
+    "crz(lambda)": [
+        ["p(lambda/2, control)", "cx(c,t)", "p(-lambda/2, target)", "cx(c,t)", "p(lambda/2, target)"]
+    ],
+    "rxx(theta)": [
+        ["h(q0)", "cx(q0,q1)", "rz(theta, q1)", "cx(q0,q1)", "h(q0)"]
+    ],
+    "ryy(theta)": [
+        ["rx(pi/2, q0)", "rx(pi/2, q1)", "cx(q0,q1)", "rz(theta, q1)", "cx(q0,q1)", "rx(-pi/2, q0)", "rx(-pi/2, q1)"]
+    ],
+    "rzz(theta)": [
+        ["cx(q0,q1)", "rz(theta, q1)", "cx(q0,q1)"]
+    ],
+    "ccx": [
+        ["h(target)", "ccz(c1,c2,target)", "h(target)"],
+        ["h(t)", "cx(c2,t)", "tdg(t)", "cx(c1,t)", "t(t)", "cx(c2,t)", "tdg(t)", "cx(c1,t)", "t(t)", "h(t)"]
+    ],
+    "cswap": [
+        ["cx(q2,q1)", "ccx(q0,q1,q2)", "cx(q2,q1)"]
+    ]
+}
